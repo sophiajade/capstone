@@ -1,0 +1,365 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Generic - Spatial by TEMPLATED</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+		integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+		crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+		integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+		crossorigin=""></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+		<link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+		<script src="https://use.fontawesome.com/d2ee68cb88.js"></script>
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet/0.0.1-beta.5/esri-leaflet.js"></script>
+    <script src="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn-geoweb.s3.amazonaws.com/esri-leaflet-geocoder/0.0.1-beta.5/esri-leaflet-geocoder.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<header id="header" class="alt">
+			<nav id="nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="elements.html">References</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+	<!-- Banner -->
+		<section id="banner">
+			<h2>Relational Values and Land Ownership in King County, Washington</h2>
+			<p>Sophia J. Brooks <br/>University of Washington Tacoma MSGT Capstone</p>
+		</section>
+
+
+		<section id="main" class="wrapper">
+			<div class="container">
+				<header class="major special">
+					<h2>Abstract</h2></header>
+					<p>Our appreciation of nature has changed in the context of what is most important to value, and how those values are fed into policymaking and conservation efforts. Concluding whether nature should be conserved and provide services for human benefit, or if it should remain in its wild state for the benefit of nature itself has been continually debated in policy discussions. The gap in these two notions suggests a hybrid method of showing the relational and qualitative values of certain spaces in nature, not often brought up in many decision-making discussions. Peri-urban agricultural lands in the Western United States hold significant value, due to rapid urbanization and growing development pressures. To approach a concept that is not circulated around policymaking as much as it should be, I will create multiple, comparable geospatial visualizations of the diverse forms of value placed on land. In doing so, the gaps in value will be the primary focus of this research project to show what is beyond just the economic benefits to peri-urban agriculture. Mapping what isn’t always there or what is often invisible will exemplify how our relationship to these peri-urban spaces include much more than the evident economic and market values as reasons for preservation.</p>
+
+
+					<section id="three" class="wrapper style1">
+						<div class="container">
+							<header class="major special">
+								<h2>Key Terms</h2>
+								<p>Feugiat sed lorem ipsum magna</p>
+							</header>
+							<div class="feature-grid">
+								<div class="feature">
+
+									<div class="content">
+										<header>
+											<h4>Land</h4>
+											<p>text</p>
+										</header>
+										<p>Land has been defined as "having a presence and location" (Li 2014)</p>
+									</div>
+								</div>
+								<div class="feature">
+									<div class="content">
+										<header>
+											<h4>Peri-Urban Areas (UPA)</h4>
+											<p>Ratione maiores a, commodi</p>
+										</header>
+										<p>Transitional zones denoted by their proximity to urban regions and development (Chen et al., 2018). </p>
+									</div>
+								</div>
+								<div class="feature">
+									<div class="content">
+										<header>
+											<h4>Space and Place</h4>
+											<p>Possimus ex reprehenderit eaque</p>
+										</header>
+										<p>Maiores iusto inventore fugit architecto est iste expedita commodi sed, quasi feugiat nam neque mollitia vitae omnis, ea natus facere.</p>
+									</div>
+								</div>
+								<div class="feature">
+									<div class="content">
+										<header>
+											<h4>Central Place Theory</h4>
+											<p>Walter Christaller 1933</p>
+										</header>
+										<p>Central Place Theory (CPT) </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+					<header class="major">
+						<h2>Geospatial Visualization</h2>
+					</header>
+						<p>This map examines land ownership within King County by looking at land parcels and protected farmlands. Each piece of land is connected back to a department in King County to visualize ownership and who has the highest jurisdiction in the city.</p>
+				<div id="map" style="width: 1200px; height: 700px; margin: auto;"></div>
+				<script>
+
+				var mymap = L.map('map', {zoomControl:true, fullscreenControl: {pseudoFullscreen: false}}).setView([47.49, -121.78], 9);
+				L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',{
+				attribution: "Map tiles by Carto, under CC BY 3.0. Data by OpenStreetMap, under ODbL."
+			}).addTo(mymap);
+
+var layerControl = L.control.layers().addTo(mymap);
+
+$.getJSON("seattleland.json", function(data){
+	var seattle = L.geoJSON(data,{
+		style: function(feature){
+			return { color: "#2a6138", fillOpacity: .5, weight: 2};
+		},
+		onEachFeature: function( feature, layer){
+			layer.bindPopup("<b>Name: </b>" + feature.properties.PMA_NAME + "<br><b> Land Classification:</b> " + feature.properties.USE_CLASS + "<br><b> Jurisdiction Department: </b>" + feature.properties.JURIS_DEPT + "<br><b> Address: </b>" + feature.properties.ADDRESS + "<br><b> Status: </b>" + feature.properties.STATUS)}}
+		).addTo(mymap);
+		layerControl.addOverlay(seattle, "City of Seattle");
+});
+
+$.getJSON("DNR_Land.json", function(data){
+	var dnr = L.geoJSON(data,{
+		style: function(feature){
+			return { color: "#006666", fillOpacity: .5, weight: 2};
+		},
+		onEachFeature: function( feature, layer){
+			layer.bindPopup("<b>Parcel Description: </b>" + feature.properties.PARCEL_DES + "<br><b> Owner Rights: </b>" + feature.properties.OWN_RIGHT_ + "<br><b> Surface Rights: </b>" + feature.properties.SURFACE_RI + "<br><b> Mineral Rights: </b>" + feature.properties.MINERAL_RI + "<br><b> Timber Rights: </b>" + feature.properties.TIMBER_RIG)}}
+		).addTo(mymap);
+		layerControl.addOverlay(dnr, "Department of Natural Resources");
+});
+
+$.getJSON("boundary.json", function(data){
+	var boundary = L.geoJSON(data,{
+		style: function(feature){
+			return { color: "#669999", fillOpacity: 0, weight: .7};
+		},
+		onEachFeature: function( feature, layer){
+			layer.bindPopup("<b>County: </b>" + feature.properties.COUNTY)}}
+		).addTo(mymap);
+		layerControl.addOverlay(boundary, "King County Boundary");
+});
+
+$.getJSON("farmlandproperty.json", function(data){
+	var farms = L.geoJSON(data,{
+		style: function(feature){
+			return { color: "#f2b91b", fillOpacity: .5, weight: .7};
+		},
+		onEachFeature: function( feature, layer){
+			layer.bindPopup("<b>Protected Farmland</b>" + "<br><b>Acres: </b>" + feature.properties.GIS_ACRES)}}
+		).addTo(mymap);
+		layerControl.addOverlay(farms, "King County Protected Farmlands");
+});
+
+$.getJSON("departments.json",function(data){
+    var circleIcon = L.icon({
+    iconUrl: 'circle.svg',
+    iconSize: [9,9]
+  });
+    L.geoJson(data,{
+    pointToLayer: function(feature,latlng){
+      var marker = L.marker(latlng,{icon: circleIcon});
+  marker.bindPopup("<b> Department: </b>" + feature.properties.Title + ", (" + feature.properties.Acronym + ")" + "<br><b>Address: </b>" + feature.properties.Address);
+	marker.on('mouseover',function(ev) {
+      marker.openPopup();
+    });
+	marker.on('mouseout',function(ev) {
+      marker.closePopup();
+    });
+  return marker;
+	  return L.marker(latlng,{icon: circleIcon});
+    }
+
+  }).addTo(mymap);
+});
+
+var legend = L.control({ position: "bottomright" });
+		legend.onAdd = function(map) {
+		  var div = L.DomUtil.create("div", "legend");
+		  div.innerHTML += "<h4>Legend</h4>";
+		  div.innerHTML += '<i style="background: #2a6138"></i><span>City of Seattle</span><br>';
+		  div.innerHTML += '<i style="background: #006666"></i><span>Department of Natural Resources</span><br>';
+			div.innerHTML += '<i style="background: #f2b91b"></i><span>King County Protected Farmlands</span><br>';
+			div.innerHTML += '<i class="icon: fa fa-circle";></i><span>Departments</span><br>';
+		  return div;
+		};
+		legend.addTo(mymap);
+
+var polylineARTS = L.polyline([
+		            [47.598628, -122.329489],
+		            [47.589190, -122.301851]],
+								{
+                color: 'black',
+                weight: 1,
+                opacity: .7,
+                lineJoin: 'round'
+            }
+							).addTo(mymap);
+
+
+var polylineCEN = L.polyline([
+								[47.6051, -122.329618],
+								[47.621916, -122.351632]],
+								{
+                color: ' black',
+                weight: 1,
+                opacity: .7,
+                lineJoin: 'round'
+            }
+							).addTo(mymap);
+
+var polylineDON = L.polyline([
+ 								[47.6042, -122.329491],
+								[47.5944059914572, -122.321293566076]],
+								{
+							  color: 'black',
+							  weight: 1,
+							  opacity: .7,
+							  lineJoin: 'round'
+						}
+							).addTo(mymap);
+
+var polylineFAS = L.polyline([
+		            [47.6054, -122.329316],
+		            [47.616177, -122.344970]],
+								{
+                color: 'black',
+                weight: 1,
+                opacity: .7,
+                lineJoin: 'round'
+            }
+							).addTo(mymap);
+
+var polylineHSD = L.polyline([
+								[47.6051, -122.329618],
+								[47.348042, -121.715029]],
+								{
+                color: ' black',
+                weight: 1,
+                opacity: .7,
+                lineJoin: 'round'
+            }
+							).addTo(mymap);
+
+var polylineOH = L.polyline([
+ 								[47.6051,-122.329201],
+								[47.673531, -122.354546]],
+								{
+							  color: 'black',
+							  weight: 1,
+							  opacity: .7,
+							  lineJoin: 'round'
+						}
+							).addTo(mymap);
+
+var polylinePARKS = L.polyline([
+ 								[47.6192, -122.341489],
+								[47.680381, -122.256670]],
+								{
+							  color: 'black',
+							  weight: 1,
+							  opacity: .7,
+							  lineJoin: 'round'
+						}
+							).addTo(mymap);
+
+var polylineSCL = L.polyline([
+		            [47.6051, -122.329925],
+		            [47.542863, -122.315721]],
+								{
+                color: 'black',
+                weight: 1,
+                opacity: .7,
+                lineJoin: 'round'
+            }
+							).addTo(mymap);
+
+var polylineSDOT = L.polyline([
+								[47.6052, -122.329925],
+								[47.5533382842242, -122.308024198898]],
+								{
+                color: ' black',
+                weight: 1,
+                opacity: .7,
+                lineJoin: 'round'
+            }
+							).addTo(mymap);
+
+var polylineSPL = L.polyline([
+								[47.6067, -122.332435],
+								[47.582698, -122.384672]],
+								{
+                color: ' black',
+                weight: 1,
+                opacity: .7,
+                lineJoin: 'round'
+            }
+							).addTo(mymap);
+
+var polylineSPU = L.polyline([
+								[47.6051, -122.329618],
+								[47.348042, -121.715029]],
+								{
+                color: ' black',
+                weight: 1,
+                opacity: .7,
+                lineJoin: 'round'
+            }
+							).addTo(mymap);
+
+var polylineDNR = L.polyline([
+		            [47.0374, -122.897602],
+		            [47.238883, -121.787772]],
+								{
+                color: 'black',
+                weight: 1,
+                opacity: .7,
+                lineJoin: 'round'
+            }
+							).addTo(mymap);
+
+var searchControl = new L.esri.Controls.Geosearch().addTo(mymap);
+
+            var results = new L.LayerGroup().addTo(mymap);
+
+              searchControl.on('results', function(data){
+                results.clearLayers();
+                for (var i = data.results.length - 1; i >= 0; i--) {
+                  results.addLayer(L.marker(data.results[i].latlng));
+                }
+              });
+
+				</script>
+					<p>Vis accumsan feugiat adipiscing nisl amet adipiscing accumsan blandit accumsan sapien blandit ac amet faucibus aliquet placerat commodo. Interdum ante aliquet commodo accumsan vis phasellus adipiscing. Ornare a in lacinia. Vestibulum accumsan ac metus massa tempor. Accumsan in lacinia ornare massa amet. Ac interdum ac non praesent. Cubilia lacinia interdum massa faucibus blandit nullam. Accumsan phasellus nunc integer. Accumsan euismod nunc adipiscing lacinia erat ut sit. Arcu amet. Id massa aliquet arcu accumsan lorem amet accumsan.</p>
+					<p><div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div></p>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

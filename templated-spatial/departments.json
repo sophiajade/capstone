@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Seattle Office of Arts and Culture",
+        "Address": "303 S Jackson St, Seattle, WA 98104",
+        "Acronym": "ARTS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.329489,
+          47.598628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Seattle Center",
+        "Address": "305 Harrison St, Seattle, WA 98109",
+        "Acronym": "CEN"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.35125,
+          47.6221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Seattle Department of Neighborhoods",
+        "Address": "600 4th Avenue 4th Floor, Seattle, WA 98104",
+        "Acronym": "DON"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.329491,
+          47.6042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Seattle Finance and Administrative Services",
+        "Address": "700 5th Ave Suite 4200, Seattle, WA 98104",
+        "Acronym": "FAS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.329316,
+          47.6054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Seattle Human Services Department",
+        "Address": "700 5th Ave #5800, Seattle, WA 98104",
+        "Acronym": "HSD"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.329011,
+          47.6051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Seattle Office of Housing",
+        "Address": "700 5th Ave #5700, Seattle, WA 98104",
+        "Acronym": "OH"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.329201,
+          47.6051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Seattle Parks Department",
+        "Address": "100 Dexter Ave N, Seattle, WA 98109",
+        "Acronym": "PARKS"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.341489,
+          47.6192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Seattle City Light",
+        "Address": "700 5th Ave #3200, Seattle, WA 98104",
+        "Acronym": "SCL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.329925,
+          47.6051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Seattle Department of Transportation",
+        "Address": "Seattle Municipal Tower, 700 5th Ave, Seattle, WA 98104",
+        "Acronym": "SDOT"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.329925,
+          47.6052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Seattle Public Library",
+        "Address": "1000 4th Ave, Seattle, WA 98104",
+        "Acronym": "SPL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.332435,
+          47.6067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Seattle Public Utilities",
+        "Address": "700 5th Avenue, Suite 4900, Seattle, WA, 98104",
+        "Acronym": "SPU"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.329618,
+          47.6051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Washington State Department of Natural Resources",
+        "Address": "1111 Washington St. SE, Olympia, WA 98504",
+        "Acronym": "DNR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.897602,
+          47.0374
+        ]
+      }
+    }
+  ]
+}

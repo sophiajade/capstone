@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Sophie Brooks</Author>
+  <LastAuthor>Sophie Brooks</LastAuthor>
+  <Created>2020-07-24T00:34:29Z</Created>
+  <LastSaved>2020-07-26T16:33:29Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>9705</WindowHeight>
+  <WindowWidth>20520</WindowWidth>
+  <WindowTopX>32767</WindowTopX>
+  <WindowTopY>32767</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"
+    ss:Bold="1"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="3" ss:ExpandedRowCount="13" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="51" ss:DefaultRowHeight="14.25">
+   <Column ss:AutoFitWidth="0" ss:Width="184.125"/>
+   <Column ss:AutoFitWidth="0" ss:Width="66"/>
+   <Column ss:AutoFitWidth="0" ss:Width="97.875"/>
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">department</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">acronym</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">address</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Seattle Office of Arts and Culture </Data></Cell>
+    <Cell><Data ss:Type="String">ARTS</Data></Cell>
+    <Cell><Data ss:Type="String">303 S Jackson St, Seattle, WA 98104</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Seattle Center</Data></Cell>
+    <Cell><Data ss:Type="String">CEN</Data></Cell>
+    <Cell><Data ss:Type="String">305 Harrison St, Seattle, WA 98109</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Seattle Department of Neighborhoods </Data></Cell>
+    <Cell><Data ss:Type="String"> DON</Data></Cell>
+    <Cell><Data ss:Type="String">600 4th Avenue 4th Floor, Seattle, WA 98104</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Seattle Finance and Administrative Services </Data></Cell>
+    <Cell><Data ss:Type="String">FAS</Data></Cell>
+    <Cell><Data ss:Type="String">700 5th Ave Suite 4200, Seattle, WA 98104</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Seattle Human Services Department</Data></Cell>
+    <Cell><Data ss:Type="String">HSD</Data></Cell>
+    <Cell><Data ss:Type="String">700 5th Ave #5800, Seattle, WA 98104</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Seattle Office of Housing</Data></Cell>
+    <Cell><Data ss:Type="String">OH</Data></Cell>
+    <Cell><Data ss:Type="String">700 5th Ave #5700, Seattle, WA 98104</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Seattle Parks Department </Data></Cell>
+    <Cell><Data ss:Type="String">PARKS</Data></Cell>
+    <Cell><Data ss:Type="String">100 Dexter Ave N, Seattle, WA 98109</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Seattle City Light</Data></Cell>
+    <Cell><Data ss:Type="String">SCL</Data></Cell>
+    <Cell><Data ss:Type="String">700 5th Ave #3200, Seattle, WA 98104</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Seattle Department of Transportation</Data></Cell>
+    <Cell><Data ss:Type="String">SDOT</Data></Cell>
+    <Cell><Data ss:Type="String">Seattle Municipal Tower, 700 5th Ave, Seattle, WA 98104</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Seattle Public Library</Data></Cell>
+    <Cell><Data ss:Type="String">SPL</Data></Cell>
+    <Cell><Data ss:Type="String">1000 4th Ave, Seattle, WA 98104</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Seattle Public Utilities </Data></Cell>
+    <Cell><Data ss:Type="String">SPU</Data></Cell>
+    <Cell><Data ss:Type="String">700 5th Avenue, Suite 4900, Seattle, WA, 98104</Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String">Washington State Department of Natural Resources</Data></Cell>
+    <Cell><Data ss:Type="String">DNR</Data></Cell>
+    <Cell><Data ss:Type="String">1111 Washington St. SE, Olympia, WA 98504</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>360</HorizontalResolution>
+    <VerticalResolution>360</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>16</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,14 @@
+department	acronym	address	lat	long
+Seattle Office of Arts and Culture 	ARTS	"303 S Jackson St, Seattle, WA 98104"	47.598628	-122.329489
+Seattle Center	CEN	"305 Harrison St, Seattle, WA 98109"	47.622137	-122.35125
+Seattle Department of Neighborhoods 	 DON	"600 4th Avenue 4th Floor, Seattle, WA 98104"	47.604182	-122.329491
+Seattle Finance and Administrative Services 	FAS	"700 5th Ave Suite 4200, Seattle, WA 98104"	47.605377	-122.329316
+Seattle Human Services Department	HSD	"700 5th Ave #5800, Seattle, WA 98104"	47.605062	-122.329011
+Seattle Office of Housing	OH	"700 5th Ave #5700, Seattle, WA 98104"	47.60514	-122.329201
+Seattle Parks Department 	PARKS	"100 Dexter Ave N, Seattle, WA 98109"	47.619176	-122.341489
+Seattle City Light	SCL	"700 5th Ave #3200, Seattle, WA 98104"	47.605054	-122.329288
+Seattle Department of Transportation	SDOT	"Seattle Municipal Tower, 700 5th Ave, Seattle, WA 98104"	47.605182	-122.329925
+Seattle Public Library	SPL	"1000 4th Ave, Seattle, WA 98104"	47.606711	-122.332435
+Seattle Public Utilities 	SPU	"700 5th Avenue, Suite 4900, Seattle, WA, 98104"	47.605113	-122.329618
+Washington State Department of Natural Resources	DNR	"1111 Washington St. SE, Olympia, WA 98504"	47.03738	-122.897602
+				
